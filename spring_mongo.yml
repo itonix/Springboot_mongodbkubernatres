@@ -6,17 +6,17 @@ kind: Deployment
 metadata:
   name: mongodbpod
   labels:
-    app: mongolabel
+    app: mongodb
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: mongolabel
+      app: mongodb
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: mongolabel
+        app: mongo
     spec:
       containers:
       - name: mongo
