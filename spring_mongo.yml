@@ -27,11 +27,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: mongodbip
+  name: mongo
 spec:
   type: ClusterIP
   selector:
-    app: mongolabel
+    app: mongodb
   ports:
     - protocol: TCP
       port: 27017
